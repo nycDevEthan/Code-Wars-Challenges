@@ -62,3 +62,35 @@ function abbrevName(name){
   
   abbrevName('Sam Harris');
   abbrevName('patrick feeney');
+
+  // Ethan O'Connell - 5/4/22
+  // 8 kyu How good are you really?
+// There was a test in your class and you passed it. Congratulations!
+// But you're an ambitious person. You want to know if you're better than the average student in your class.
+
+// You receive an array with your peers' test scores. Now calculate the average and compare your score!
+
+// Return True if you're better, else False!
+
+// Note:
+// Your points are not included in the array of your class's points. For calculating the average point you may add your point to the given array!
+
+// Solution:
+function betterThanAverage(classPoints, yourPoints) {
+  
+  let classAverage = classPoints.reduce((totalPoints, currentPoints) => totalPoints + currentPoints, 0) / classPoints.length;
+  
+  switch(true) {
+      case (classAverage === yourPoints):
+        console.log("My test score is the same as the class average");
+        return true;
+      case (classAverage < yourPoints):
+        console.log("My test score is greater than the class average");
+        return true;
+      case (classAverage > yourPoints):
+        console.log("My test score is less than the class average");
+        return false;
+    }
+}
+
+betterThanAverage([77,88,99,50], 100);
