@@ -63,8 +63,8 @@ function abbrevName(name){
   abbrevName('Sam Harris');
   abbrevName('patrick feeney');
 
-  // Ethan O'Connell - 5/4/22
-  // 8 kyu How good are you really?
+// Ethan O'Connell - 5/4/22
+// 8 kyu How good are you really?
 // There was a test in your class and you passed it. Congratulations!
 // But you're an ambitious person. You want to know if you're better than the average student in your class.
 
@@ -94,3 +94,18 @@ function betterThanAverage(classPoints, yourPoints) {
 }
 
 betterThanAverage([77,88,99,50], 100);
+
+// Ethan O'Connell - 5/5/22
+// 8 kyu A Needle in the Haystack
+// Can you find the needle in the haystack?
+// Write a function findNeedle() that takes an array full of junk but containing one "needle"
+// After your function finds the needle it should return a message (as a string) that says:
+// "found the needle at position " plus the index it found the needle, so:
+// findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])
+
+// Solution
+function findNeedle(haystack) {
+  const needleInHayStack = haystack.find(element => element === 'needle');
+  
+  return `found the ${needleInHayStack} at position ${haystack.indexOf('needle')}`;
+}
