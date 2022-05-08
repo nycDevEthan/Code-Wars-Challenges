@@ -120,3 +120,16 @@ function findNeedle(haystack) {
 function check(a, x) {
   return a.includes(x);
 }
+
+// Ethan O'Connell - 5/7/22
+// 8 kyu Reversed Strings
+// Complete the solution so that it reverses the string passed into it.
+// 'world'  =>  'dlrow'
+// 'word'   =>  'drow'
+
+// Solution
+function solution(str){
+  let strArr = str.split('');
+  strArr = strArr.reverse();
+  return strArr.join('');
+}
