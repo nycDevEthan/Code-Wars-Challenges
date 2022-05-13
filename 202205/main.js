@@ -202,3 +202,32 @@ function positiveSum(arr) {
   }
   return sum;
 }
+
+// Ethan O'Connell - 5/12/22
+// 8 kyu Count of positives / sum of negatives
+// Given an array of integers.
+// Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers. 0 is neither positive nor negative.
+// If the input is an empty array or is null, return an empty array.
+// Example
+// For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should return [10, -65].
+
+function countPositivesSumNegatives(input) {
+  let posCount = 0;
+  let negSum = 0;
+  let posCountAndNegSum = [];
+  
+  if (input === null || input.length === 0) {
+    return [];
+  }
+
+  for (let i = 0; i <= input.length - 1; i++) {
+    if (Math.sign(input[i]) === 1) {
+      posCount++;
+    } else if (Math.sign(input[i]) === -1) {
+      negSum += input[i];
+    }
+  }
+  posCountAndNegSum.push(posCount);
+  posCountAndNegSum.push(negSum);
+  return posCountAndNegSum;
+}
