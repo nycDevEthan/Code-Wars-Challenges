@@ -203,7 +203,7 @@ function positiveSum(arr) {
   return sum;
 }
 
-// Ethan O'Connell - 5/12/22
+// Ethan O'Connell - 5/13/22
 // 8 kyu Count of positives / sum of negatives
 // Given an array of integers.
 // Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers. 0 is neither positive nor negative.
