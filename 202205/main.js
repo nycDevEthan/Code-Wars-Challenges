@@ -240,3 +240,10 @@ function boolToWord( bool ){
   if (bool === true) return "Yes";
   else return "No";
 }
+
+// Ethan O'Connell - 5/15/22
+// Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+
+function even_or_odd(number) {
+  return number % 2 === 0 ? 'Even' : 'Odd';
+}
