@@ -276,3 +276,19 @@ function validatePIN (pin) {
   if (Number(pin) >= 0 && Number(pin) % 1 === 0 && (pin.length === 4 || pin.length === 6)) return true;
   else return false;
 }
+
+// Ethan O'Connell - 5/17/22
+// 8 kyu
+// Opposite number
+// Very simple, given an integer or a floating-point number, find its opposite.
+
+// Examples:
+
+// 1: -1
+// 14: -14
+// -34: 34
+
+function opposite(number) {
+  if (Math.sign(number) === 1) return -Math.abs(number);
+  else return Math.abs(number);
+}
