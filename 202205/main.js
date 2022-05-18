@@ -293,6 +293,7 @@ function opposite(number) {
   else return Math.abs(number);
 }
 
+// Ethan O'Connell - 5/18/22
 // 8 kyu
 // Return Negative
 // In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
@@ -308,4 +309,21 @@ function opposite(number) {
 
 function makeNegative(num) {
   return (Math.sign(num) === 1) ? -num : num;
+}
+
+// Ethan O'Connell - 5/18/22
+// 8 kyu
+// Calculate average
+// Write a function which calculates the average of the numbers in a given list.
+
+// Note: Empty arrays should return 0.
+
+function find_average(array) {
+  if (array.length === 0) {
+    return 0;
+  } else {
+    let total = 0;
+    array.forEach(element => total += element);
+    return total / array.length;
+  }
 }
