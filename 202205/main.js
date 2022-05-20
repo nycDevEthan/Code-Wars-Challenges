@@ -327,3 +327,35 @@ function find_average(array) {
     return total / array.length;
   }
 }
+
+// Ethan O'Connell - 5/19/22
+// 8 kyu
+// Are You Playing Banjo?
+// Create a function which answers the question "Are you playing banjo?".
+// If your name starts with the letter "R" or lower case "r", you are playing banjo!
+
+// The function takes a name as its only argument, and returns one of the following strings:
+
+// name + " plays banjo" 
+// name + " does not play banjo"
+// Names given are always valid strings.
+
+function areYouPlayingBanjo(name) {
+  if ( name[0] === 'R' || name[0] === 'r' ) {
+    return `${name} plays banjo`;
+  } else {
+    return `${name} does not play banjo`;
+  }
+}
+
+// Ethan O'Connell - 5/20/22
+// 8 kyu
+// String repeat
+// Write a function called repeatStr which repeats the given string string exactly n times.
+
+// repeatStr(6, "I") // "IIIIII"
+// repeatStr(5, "Hello") // "HelloHelloHelloHelloHello"
+
+function repeatStr (n, s) {
+  return s.repeat(n);
+}
