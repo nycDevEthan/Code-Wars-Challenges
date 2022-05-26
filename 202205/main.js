@@ -359,3 +359,12 @@ function areYouPlayingBanjo(name) {
 function repeatStr (n, s) {
   return s.repeat(n);
 }
+
+// Ethan O'Connell - 5/26/22
+// 8 kyu
+// Remove String Spaces
+// Simple, remove the spaces from the string, then return the resultant string.
+
+function noSpace(x){
+  return x.replace(/\s+/g, '');
+}
