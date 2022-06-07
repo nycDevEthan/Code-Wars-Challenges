@@ -15,3 +15,13 @@
 function digitize(n) {
     return n.toString().split('').reverse().map(Number);
 }
+
+// Ethan O'Connell - 6/07/22
+// 8 kyu
+// Function 3 - multiplying two numbers
+// Implement a function which multiplies two numbers.
+
+// Write here your multiply-function
+function multiply(n1, n2) {
+    return n1 * n2;
+}
