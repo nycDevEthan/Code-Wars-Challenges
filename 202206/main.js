@@ -15,3 +15,28 @@
 function digitize(n) {
     return n.toString().split('').reverse().map(Number);
 }
+
+// Ethan O'Connell - 6/07/22
+// 8 kyu
+// Function 3 - multiplying two numbers
+// Implement a function which multiplies two numbers.
+
+// Write here your multiply-function
+function multiply(n1, n2) {
+    return n1 * n2;
+}
+
+// Ethan O'Connell - 6/08/22
+// 8 kyu
+// Third Angle of a Triangle
+// You are given two interior angles (in degrees) of a triangle.
+
+// Write a function to return the 3rd.
+
+// Note: only positive integers will be tested.
+
+// https://en.wikipedia.org/wiki/Triangle
+
+function otherAngle(a, b) {
+    return (180 - (a + b));
+  }
