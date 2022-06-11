@@ -26,7 +26,7 @@ function multiply(n1, n2) {
     return n1 * n2;
 }
 
-// Ethan O'Connell - 6/08/22
+// Ethan O'Connell - 6/8/22
 // 8 kyu
 // Third Angle of a Triangle
 // You are given two interior angles (in degrees) of a triangle.
@@ -39,4 +39,17 @@ function multiply(n1, n2) {
 
 function otherAngle(a, b) {
     return (180 - (a + b));
+  }
+
+// Ethan O'Connell - 6/9/22
+// 8 kyu
+// Is n divisible by x and y?
+// Create a function that checks if a number n is divisible by two numbers x AND y. All inputs are positive, non-zero digits.
+
+function isDivisible(n, x, y) {
+    if (n % x == 0 && n % y == 0) {
+      return true;
+    } else {
+      return false;
+    }
   }
