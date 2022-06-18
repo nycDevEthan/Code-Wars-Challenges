@@ -227,3 +227,24 @@ function feast(beast, dish) {
 function lovefunc(flower1, flower2){
   return true ? flower1 % 2 === 0 && flower2 % 2 !== 0 || flower1 % 2 !== 0 && flower2 % 2 === 0 : false;
 }
+
+// Ethan O'Connell - 6/17/22
+// 8 kyu
+// Keep Hydrated!
+// Nathan loves cycling.
+
+// Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
+
+// You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
+
+// For example:
+
+// time = 3 ----> litres = 1
+
+// time = 6.7---> litres = 3
+
+// time = 11.8--> litres = 5
+
+function litres(time) {
+  return Math.floor(time * 0.5);
+}
