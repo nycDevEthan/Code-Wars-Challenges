@@ -228,7 +228,7 @@ function lovefunc(flower1, flower2){
   return true ? flower1 % 2 === 0 && flower2 % 2 !== 0 || flower1 % 2 !== 0 && flower2 % 2 === 0 : false;
 }
 
-// Ethan O'Connell - 6/17/22
+// Ethan O'Connell - 6/18/22
 // 8 kyu
 // Keep Hydrated!
 // Nathan loves cycling.
