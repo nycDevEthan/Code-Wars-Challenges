@@ -248,3 +248,14 @@ function lovefunc(flower1, flower2){
 function litres(time) {
   return Math.floor(time * 0.5);
 }
+
+// Ethan O'Connell - 6/19/22
+// 8 kyu
+// Is it a palindrome?
+// Write a function that checks if a given string (case insensitive) is a palindrome.
+
+function isPalindrome(x) {
+  x = x.toLowerCase()
+  return x === x.split('').reverse().join('');
+  
+}
