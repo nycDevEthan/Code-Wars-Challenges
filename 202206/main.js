@@ -290,6 +290,5 @@ function century(year) {
   return year % 100 === 0 ? Math.floor(year / 100) : Math.floor(year / 100) + 1;
 }
 
-// Storing arrow function value into century variable
-// Learned about Math.ceil()
+// Using arrow function, learned about Math.ceil()
 const century = year => Math.ceil(year / 100);
