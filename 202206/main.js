@@ -306,7 +306,7 @@ function sumMix(x){
   return sum;
 }
 
-// top solution - learned how to refactor function body into one return statement and how to use unary plus operator https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus
+// JS CW, array.() and array.reduce() practice.  Top solution - learned how to refactor function body into one return statement and how to use unary plus operator https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus.
 
 function sumMix(x){
   return x.map(a => +a).reduce((a, b) => a + b);
