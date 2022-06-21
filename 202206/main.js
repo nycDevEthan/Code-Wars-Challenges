@@ -292,3 +292,22 @@ function century(year) {
 
 // Using arrow function, learned about Math.ceil()
 const century = year => Math.ceil(year / 100);
+
+// Ethan O'Connell - 6/21/22
+// 8 kyu
+// Sum Mixed Array
+// Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.
+
+// Return your answer as a number.
+
+function sumMix(x){
+  const arrOfNums = x.map(arrVal => Number(arrVal));
+  const sum = arrOfNums.reduce((prevVal, currVal) => prevVal + currVal, 0);
+  return sum;
+}
+
+// top solution - learned how to refactor function body into one return statement and how to use unary plus operator https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus
+
+function sumMix(x){
+  return x.map(a => +a).reduce((a, b) => a + b);
+}
