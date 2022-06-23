@@ -312,7 +312,7 @@ function sumMix(x){
   return x.map(a => +a).reduce((a, b) => a + b);
 }
 
-// Ethan O'Connell - 6/21/22
+// Ethan O'Connell - 6/22/22
 // 8 kyu
 // Convert a Boolean to a String
 // Implement a function which convert the given boolean value into its string representation.
