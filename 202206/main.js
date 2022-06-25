@@ -341,3 +341,40 @@ function booleanToString(b) {
 function maps(x){
   return x.map(y => y * 2);
 }
+
+// Ethan O'Connell - 6/24/22
+// 8 kyu
+// Beginner Series #2 Clock
+// Clock shows h hours, m minutes and s seconds after midnight.
+
+// Your task is to write a function which returns the time since midnight in milliseconds.
+
+// Example:
+// h = 0
+// m = 1
+// s = 1
+
+// result = 61000
+// Input constraints:
+
+// 0 <= h <= 23
+// 0 <= m <= 59
+// 0 <= s <= 59
+
+function past(h, m, s){
+  //#Happy Coding! ^_^
+
+  
+
+  const millisecond = 1000;
+  // convert h to ms - 1 h = 3,600,000,000 ms
+  const hoursToMilliseconds = (h * (millisecond * Math.pow(60, 2)));
+  // convert m to ms - 1 m = 60000 ms
+  const minutesToMilliseconds = (m * (millisecond * 60));
+  // convert s to ms - 1 s = 1000 ms
+  const secondsToMilliseconds = (s * millisecond);
+  // sum conversions
+  const sum = (secondsToMilliseconds + minutesToMilliseconds + hoursToMilliseconds);
+  
+  return sum;
+}
