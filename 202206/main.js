@@ -364,7 +364,11 @@ function maps(x){
 function past(h, m, s){
   //#Happy Coding! ^_^
 
-  
+  // error handling
+  if ((h < 0 || h > 23) || (m < 0 || m > 59) || (s < 0 || s > 59)) {
+    console.log(`Please enter valid times - h (0-23), m (0-59), s (0-59)`);
+    return false;
+  }  
 
   const millisecond = 1000;
   // convert h to ms - 1 h = 3,600,000,000 ms
