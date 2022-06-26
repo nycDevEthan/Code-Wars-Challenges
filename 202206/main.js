@@ -382,3 +382,12 @@ function past(h, m, s){
   
   return sum;
 }
+
+// Ethan O'Connell - 6/24/22
+// 8 kyu
+// MakeUpperCase
+// Write a function which converts the input string to uppercase.
+
+function makeUpperCase(str) {
+  return str.toUpperCase();
+}
