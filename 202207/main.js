@@ -90,3 +90,12 @@ function DNAtoRNA(dna) {
 const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
     return (distanceToPump / mpg) <= fuelLeft ? true : false;
 };
+
+// Ethan O'Connell - 7/5/22
+// 8 kyu
+// Simple multiplication
+// This kata is about multiplying a given number by eight if it is an even number and by nine otherwise.
+
+function simpleMultiplication(number) {
+    return number % 2 === 0 ? number * 8 : number * 9;
+}
