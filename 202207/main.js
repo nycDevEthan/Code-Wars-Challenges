@@ -99,3 +99,24 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
 function simpleMultiplication(number) {
     return number % 2 === 0 ? number * 8 : number * 9;
 }
+
+// Ethan O'Connell - 7/6/22
+// 8 kyu
+// Get the mean of an array
+// It's the academic year's end, fateful moment of your school report. The averages must be calculated. All the students come to you and entreat you to calculate their average for them. Easy ! You just need to write a script.
+
+// Return the average of the given array rounded down to its nearest integer.
+
+// The array will never be empty.
+
+function getAverage(marks){
+    const avg = marks.reduce((a, c) => a + c, 0) / marks.length;
+    
+    return Math.floor(avg);
+}
+
+// learned how to optimize into one line return
+
+function getAverage(marks){
+    return Math.floor(marks.reduce((a, c) => a + c) / marks.length);
+}
