@@ -120,3 +120,18 @@ function getAverage(marks){
 function getAverage(marks){
     return Math.floor(marks.reduce((a, c) => a + c) / marks.length);
 }
+
+// Ethan O'Connell - 7/7/22
+// 8 kyu
+// Reversed Words
+// Complete the solution so that it reverses all of the words within the string passed in.
+
+// Example(Input --> Output):
+
+// "The greatest victory is that which requires no battle" --> "battle no requires which that is victory greatest The"
+
+// same as top solution :)
+
+function reverseWords(str) {
+    return str.split(' ').reverse().join(' ');
+}
