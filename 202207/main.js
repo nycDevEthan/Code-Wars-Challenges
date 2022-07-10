@@ -162,3 +162,11 @@ function smash (words) {
 function stringToArray(string){
     return string.split(' ');
 }
+
+// Ethan O'Connell - 7/10/22
+// 8 kyu
+// Beginner - Reduce but Grow
+
+function grow(x){
+    return x.reduce((previousValue, currentValue) => previousValue * currentValue);
+}
