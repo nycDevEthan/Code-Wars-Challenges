@@ -192,7 +192,7 @@ function rentalCarCost(d) {
     return total;
 }
 
-// Ethan O'Connell - 7/11/22
+// Ethan O'Connell - 7/12/22
 // 8 kyu
 // Volume of a Cuboid
 // Bob needs a fast way to calculate the volume of a cuboid with three values: the length, width and height of the cuboid. Write a function to help Bob with this calculation.
@@ -203,7 +203,7 @@ class Kata {
     }
 }
 
-// Ethan O'Connell - 7/12/22
+// Ethan O'Connell - 7/13/22
 // 8 kyu
 // If you can't sleep, just count sheep!!
 // If you can't sleep, just count sheep!!
@@ -219,4 +219,26 @@ var countSheep = function (num){
     }
     
     return str;
+}
+
+// Ethan O'Connell - 7/14/22
+// 8 kyu
+// Array plus array
+// I'm new to coding and now I want to get the sum of two arrays...actually the sum of all their elements. I'll appreciate for your help.
+
+// P.S. Each array includes only integer numbers. Output is a number too.
+
+
+function arrayPlusArray(arr1, arr2) {
+    let arr1Sum = arr1.reduce((previousValue, currentValue) => previousValue + currentValue, 0);
+    let arr2Sum = arr2.reduce((previousValue, currentValue) => previousValue + currentValue, 0);  
+    return arr1Sum + arr2Sum;
+}
+
+function arrayPlusArray(arr1, arr2) {
+    return (arr1.reduce((previousValue, currentValue) => previousValue + currentValue, 0) + arr2.reduce((previousValue, currentValue) => previousValue + currentValue, 0));
+}
+
+function arrayPlusArray(arr1, arr2) {
+    return arr1.concat(arr2).reduce((previousValue, currentValue) => previousValue + currentValue);
 }
