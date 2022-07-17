@@ -263,3 +263,22 @@ function arrayPlusArray(arr1, arr2) {
 function isDivideBy(number, a, b) {
     return true ? (number % a === 0) &&  (number % b === 0) : false;
 }
+
+// Ethan O'Connell - 7/16/22
+// 8 kyu
+// Grasshopper - Personalized Message
+// Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
+
+// Use conditionals to return the proper message:
+
+// case	return
+// name equals owner	'Hello boss'
+// otherwise	'Hello guest'
+
+function greet (name, owner) {
+    if (name === owner) {
+      return 'Hello boss';
+    } else {
+      return `Hello guest`;
+    }
+}
